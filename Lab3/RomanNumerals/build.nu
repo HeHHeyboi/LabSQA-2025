@@ -1,2 +1,2 @@
 javac -cp $env.JUNIT src/**/*.java -d bin/
-java -jar $env.JUNIT bin/**/*.class execute --scan-classpath 
+java -jar $env.JUNIT execute --class-path bin --scan-classpath 
