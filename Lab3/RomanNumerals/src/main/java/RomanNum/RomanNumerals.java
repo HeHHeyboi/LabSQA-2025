@@ -5,6 +5,8 @@ To convert a Roman-numerals input to its corresponding number, the program takes
 to an integer value.
 */
 
+package RomanNum;
+
 import java.util.HashMap;
 import java.util.Map;
 
