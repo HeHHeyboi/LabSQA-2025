@@ -1,17 +1,20 @@
 package RomanNum;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
-public class NegativeTest {
+import org.junit.jupiter.api.Test;
+
+public class InvalidTest {
+
 	RomanNumerals rn = new RomanNumerals();
 
 	@Test
 	void invalid_digits() {
-		assertNull(rn.convertRomanNumToInt("J"));
-		// assertThrows(NullPointerException.class, () -> {
-		// rn.convertRomanNumToInt("J");
-		// });
+		// assertNull(rn.convertRomanNumToInt("J"));
+		assertThrows(NullPointerException.class, () -> {
+			rn.convertRomanNumToInt("J");
+		});
 	}
 
 	@Test
