@@ -1,4 +1,4 @@
-// นายธนทัต บุญยานันท์ 663380211-0
+// นายธนทัต ภู่แก้ว 663380211-0
 package SQA;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
