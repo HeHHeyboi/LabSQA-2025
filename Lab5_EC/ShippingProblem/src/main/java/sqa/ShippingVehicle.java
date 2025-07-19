@@ -1,4 +1,4 @@
-package sqa.main;
+package sqa;
 
 import java.util.ArrayList;
 import java.util.List;
