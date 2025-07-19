@@ -1,20 +1,20 @@
 purchaseTotal,frequency,pointCollected,Expected Result
 50000,4,500,Gold
-50000,4,99,Silver
-50000,4,100,Silver
-50000,4,101,Silver
+50000,4,-1,Error
+50000,4,0,Silver
+50000,4,1,Silver
 50000,4,999,Gold
 50000,4,1000,Gold
 50000,4,1001,Gold
+50000,-1,500,Error
 50000,0,500,Silver
 50000,1,500,Silver
-50000,2,500,Silver
 50000,6,500,Gold
 50000,7,500,Gold
 50000,8,500,Gold
-9999,4,500,Standard
-10000,4,500,Silver
-10001,4,500,Silver
+-1,4,500,Error
+0,4,500,Standard
+1,4,500,Standard
 99999,4,500,Gold
 100000,4,500,Gold
 100001,4,500,Gold
