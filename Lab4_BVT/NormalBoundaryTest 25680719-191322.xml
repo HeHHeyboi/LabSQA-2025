@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><testrun name="NormalBoundaryTest" project="SQA" tests="13" started="13" failures="9" errors="0" ignored="0">
-  <testsuite name="SQA.NormalBoundaryTest" time="0.0" displayname="NormalBoundaryTest" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]">
-    <testsuite name="NormalBoundDaryRankTest(SQA.NormalBoundaryTest)" time="0.0" displayname="NormalBoundDaryRankTest(int, int, int, String)" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]">
-      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.0" dynamicTest="true" displayname="[1] 50000, 4, 500, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#1]">
+  <testsuite name="SQA.NormalBoundaryTest" time="0.039" displayname="NormalBoundaryTest" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]">
+    <testsuite name="NormalBoundDaryRankTest(SQA.NormalBoundaryTest)" time="0.039" displayname="NormalBoundDaryRankTest(int, int, int, String)" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]">
+      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.039" dynamicTest="true" displayname="[1] 50000, 15, 500, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#1]">
         <failure>
           <expected>Gold</expected>
           <actual>Silver</actual>
-          org.opentest4j.AssertionFailedError: expected: &lt;Gold&gt; but was: &lt;Silver&gt;&#13;
+                    org.opentest4j.AssertionFailedError: expected: &lt;Gold&gt; but was: &lt;Silver&gt;&#13;
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
 	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
@@ -62,15 +62,16 @@
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
 &#13;
 
+        
         </failure>
       </testcase>
-      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.0" dynamicTest="true" displayname="[2] 50000, 4, 0, Standard" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#2]"/>
-      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.0" dynamicTest="true" displayname="[3] 50000, 4, 1, Standard" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#3]"/>
-      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.0" dynamicTest="true" displayname="[4] 50000, 4, 999, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#4]">
+      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.002" dynamicTest="true" displayname="[2] 50000, 15, 0, Standard" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#2]"/>
+      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.002" dynamicTest="true" displayname="[3] 50000, 15, 1, Standard" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#3]"/>
+      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.004" dynamicTest="true" displayname="[4] 50000, 15, 999, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#4]">
         <failure>
           <expected>Gold</expected>
           <actual>Silver</actual>
-          org.opentest4j.AssertionFailedError: expected: &lt;Gold&gt; but was: &lt;Silver&gt;&#13;
+                    org.opentest4j.AssertionFailedError: expected: &lt;Gold&gt; but was: &lt;Silver&gt;&#13;
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
 	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
@@ -127,13 +128,14 @@
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
 &#13;
 
+        
         </failure>
       </testcase>
-      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.0" dynamicTest="true" displayname="[5] 50000, 4, 1000, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#5]">
+      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.004" dynamicTest="true" displayname="[5] 50000, 15, 1000, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#5]">
         <failure>
           <expected>Gold</expected>
           <actual>Silver</actual>
-          org.opentest4j.AssertionFailedError: expected: &lt;Gold&gt; but was: &lt;Silver&gt;&#13;
+                    org.opentest4j.AssertionFailedError: expected: &lt;Gold&gt; but was: &lt;Silver&gt;&#13;
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
 	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
@@ -190,13 +192,14 @@
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
 &#13;
 
+        
         </failure>
       </testcase>
-      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.0" dynamicTest="true" displayname="[6] 50000, 0, 500, Silver" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#6]">
+      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.004" dynamicTest="true" displayname="[6] 50000, 0, 500, Silver" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#6]">
         <failure>
           <expected>Silver</expected>
           <actual>Standard</actual>
-          org.opentest4j.AssertionFailedError: expected: &lt;Silver&gt; but was: &lt;Standard&gt;&#13;
+                    org.opentest4j.AssertionFailedError: expected: &lt;Silver&gt; but was: &lt;Standard&gt;&#13;
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
 	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
@@ -253,13 +256,14 @@
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
 &#13;
 
+        
         </failure>
       </testcase>
-      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.001" dynamicTest="true" displayname="[7] 50000, 1, 500, Silver" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#7]">
+      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.005" dynamicTest="true" displayname="[7] 50000, 1, 500, Silver" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#7]">
         <failure>
           <expected>Silver</expected>
           <actual>Standard</actual>
-          org.opentest4j.AssertionFailedError: expected: &lt;Silver&gt; but was: &lt;Standard&gt;&#13;
+                    org.opentest4j.AssertionFailedError: expected: &lt;Silver&gt; but was: &lt;Standard&gt;&#13;
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
 	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
@@ -316,13 +320,14 @@
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
 &#13;
 
+        
         </failure>
       </testcase>
-      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.0" dynamicTest="true" displayname="[8] 50000, 6, 500, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#8]">
+      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.005" dynamicTest="true" displayname="[8] 50000, 29, 500, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#8]">
         <failure>
           <expected>Gold</expected>
           <actual>Silver</actual>
-          org.opentest4j.AssertionFailedError: expected: &lt;Gold&gt; but was: &lt;Silver&gt;&#13;
+                    org.opentest4j.AssertionFailedError: expected: &lt;Gold&gt; but was: &lt;Silver&gt;&#13;
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
 	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
@@ -379,13 +384,14 @@
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
 &#13;
 
+        
         </failure>
       </testcase>
-      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.0" dynamicTest="true" displayname="[9] 50000, 7, 500, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#9]">
+      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.007" dynamicTest="true" displayname="[9] 50000, 30, 500, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#9]">
         <failure>
           <expected>Gold</expected>
           <actual>Silver</actual>
-          org.opentest4j.AssertionFailedError: expected: &lt;Gold&gt; but was: &lt;Silver&gt;&#13;
+                    org.opentest4j.AssertionFailedError: expected: &lt;Gold&gt; but was: &lt;Silver&gt;&#13;
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
 	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
@@ -442,15 +448,16 @@
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
 &#13;
 
+        
         </failure>
       </testcase>
-      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.0" dynamicTest="true" displayname="[10] 0, 4, 500, Standard" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#10]"/>
-      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.0" dynamicTest="true" displayname="[11] 1, 4, 500, Standard" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#11]"/>
-      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.0" dynamicTest="true" displayname="[12] 99999, 4, 500, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#12]">
+      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.003" dynamicTest="true" displayname="[10] 0, 15, 500, Standard" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#10]"/>
+      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.002" dynamicTest="true" displayname="[11] 1, 15, 500, Standard" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#11]"/>
+      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.004" dynamicTest="true" displayname="[12] 99999, 15, 500, Platinum" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#12]">
         <failure>
-          <expected>Gold</expected>
+          <expected>Platinum</expected>
           <actual>Silver</actual>
-          org.opentest4j.AssertionFailedError: expected: &lt;Gold&gt; but was: &lt;Silver&gt;&#13;
+                    org.opentest4j.AssertionFailedError: expected: &lt;Platinum&gt; but was: &lt;Silver&gt;&#13;
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
 	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
@@ -507,13 +514,14 @@
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
 &#13;
 
+        
         </failure>
       </testcase>
-      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.001" dynamicTest="true" displayname="[13] 100000, 4, 500, Gold" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#13]">
+      <testcase name="NormalBoundDaryRankTest" classname="SQA.NormalBoundaryTest" time="0.004" dynamicTest="true" displayname="[13] 100000, 15, 500, Platinum" parameters="int,int,int,java.lang.String" uniqueid="[engine:junit-jupiter]/[class:SQA.NormalBoundaryTest]/[test-template:NormalBoundDaryRankTest(int, int, int, java.lang.String)]/[test-template-invocation:#13]">
         <failure>
-          <expected>Gold</expected>
+          <expected>Platinum</expected>
           <actual>Silver</actual>
-          org.opentest4j.AssertionFailedError: expected: &lt;Gold&gt; but was: &lt;Silver&gt;&#13;
+                    org.opentest4j.AssertionFailedError: expected: &lt;Platinum&gt; but was: &lt;Silver&gt;&#13;
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
 	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
@@ -570,6 +578,7 @@
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
 &#13;
 
+        
         </failure>
       </testcase>
     </testsuite>
