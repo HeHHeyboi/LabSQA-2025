@@ -1,0 +1,25 @@
+Package,Offline Download,live service,Discount,Expected Result
+Standard,False,False,False,150
+Standard,True,False,False,250
+Standard,False,True,False,250
+Standard,False,False,True,100
+Standard,True,True,False,350
+Standard,True,False,True,200
+Standard,False,True,True,200
+Premium,True,True,True,500
+Premium,False,False,False,350
+Premium,True,False,False,450
+Premium,False,True,False,450
+Premium,False,False,True,300
+Premium,True,True,False,550
+Premium,True,False,True,400
+Premium,False,True,True,400
+Premium,True,True,True,500
+Family,False,False,False,450
+Family,True,False,False,-1
+Family,False,True,False,550
+Family,False,False,True,400
+Family,True,True,False,-1
+Family,True,False,True,-1
+Family,False,True,True,500
+Family,True,True,True,-1
