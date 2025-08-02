@@ -1,0 +1,26 @@
+Package,Offline Download,live service,Discout,Expected Result
+Null,F,F,F,0
+Standard,F,F,F,150
+Standard,T,F,F,250
+Standard,F,T,F,250
+Standard,F,F,T,100
+Standard,T,T,F,350
+Standard,T,F,T,200
+Standard,F,T,T,200
+Premium,T,T,T,500
+Premium,F,F,F,350
+Premium,T,F,F,450
+Premium,F,T,F,450
+Premium,F,F,T,300
+Premium,T,T,F,550
+Premium,T,F,T,400
+Premium,F,T,T,400
+Premium,T,T,T,500
+Family,F,F,F,450
+Family,T,F,F,-1
+Family,F,T,F,550
+Family,F,F,T,400
+Family,T,T,F,-1
+Family,T,F,T,-1
+Family,F,T,T,500
+Family,T,T,T,-1
