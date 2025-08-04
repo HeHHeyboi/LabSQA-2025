@@ -1,7 +1,6 @@
-package sqa.main;
+package sqa;
 
 public class CountWordClumps {
-	
 	public static int countClumps(int[] nums) {
 		if (nums == null || nums.length == 0) {
 			return 0;
@@ -22,7 +21,7 @@ public class CountWordClumps {
 				inClump = false;
 			}
 		}
-			return count;
-	}
 
+		return count;
+	}
 }
