@@ -1,0 +1,12 @@
+From Unit, To Unit, Expected Result
+cup,ml,250
+cup,oz,8
+tablespoon,ml,15
+teaspoon,ml,5
+oz,ml,29.574
+pint,ml,473.176
+quart,liter,0.946
+ml,oz,0.034
+liter,pint,2.113
+liter,quart,1.057
+liter,gallon,0.264

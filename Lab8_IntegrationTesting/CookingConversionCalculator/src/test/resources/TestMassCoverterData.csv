@@ -1,0 +1,8 @@
+From Unit,To Unit, Expected Result
+cup,gram,125
+tablespoon,gram,8
+teaspoon,gram,3
+oz,gram,28.349
+pound,kilogram,0.454
+gram,oz,0.035
+kilogram,pound,2.205
