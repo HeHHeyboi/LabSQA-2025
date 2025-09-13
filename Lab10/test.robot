@@ -3,7 +3,7 @@ Documentation  A test for use Robot
 Library  SeleniumLibrary
 
 *** Variables ***
-${CHROME_BROWSER_PATH}  C:${/}Program Files${/}Google${/}Chrome${/}Application${/}chrome.exe
+${CHROME_BROWSER_PATH}  C:${/}Program Files${/}BraveSoftware${/}Brave-Browser${/}Application${/}brave.exe
 ${CHROME_DIRVER_PATH}  ${CURDIR}${/}chromedriver${/}chromedriver-win64${/}chromedriver.exe
 ${URL}  http://google.com
 ${BROWSER}  Chrome

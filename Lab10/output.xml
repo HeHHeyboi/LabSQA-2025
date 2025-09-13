@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-09T14:43:49.541680" rpa="false" schemaversion="5">
-<suite id="s1" name="Test" source="C:\663380211-0\LabSQA\Lab10\test.robot">
+<robot generator="Robot 7.3.2 (Python 3.13.1 on win32)" generated="2025-09-13T17:14:44.570251" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\thana\Code\SQA\LabSQA\Lab10\test.robot">
 <test id="s1-t1" name="Open Browser" line="13">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-09T14:43:49.686554" level="INFO">Opening browser 'Chrome' to base url 'http://google.com'.</msg>
+<msg time="2025-09-13T17:14:44.831246" level="INFO">Opening browser 'Chrome' to base url 'http://google.com'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-09T14:43:49.686380" elapsed="2.584238"/>
+<status status="PASS" start="2025-09-13T17:14:44.831000" elapsed="3.065211"/>
 </kw>
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>${DELAY}</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2025-09-09T14:43:52.270894" elapsed="0.000292"/>
+<status status="PASS" start="2025-09-13T17:14:47.896918" elapsed="0.000346"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-09-09T14:43:52.271338" elapsed="7.060032"/>
+<status status="PASS" start="2025-09-13T17:14:47.897486" elapsed="7.124215"/>
 </kw>
-<status status="PASS" start="2025-09-09T14:43:49.685768" elapsed="9.646448"/>
+<status status="PASS" start="2025-09-13T17:14:44.830227" elapsed="10.192349"/>
 </test>
 <doc>A test for use Robot</doc>
-<status status="PASS" start="2025-09-09T14:43:49.542393" elapsed="9.792130"/>
+<status status="PASS" start="2025-09-13T17:14:44.572341" elapsed="10.452793"/>
 </suite>
 <statistics>
 <total>
