@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.1 on win32)" generated="2025-09-13T17:14:44.570251" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.1 on win32)" generated="2025-09-13T18:37:31.085349" rpa="false" schemaversion="5">
 <suite id="s1" name="Test" source="C:\Users\thana\Code\SQA\LabSQA\Lab10\test.robot">
-<test id="s1-t1" name="Open Browser" line="13">
+<test id="s1-t1" name="Open Browser" line="14">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-13T17:14:44.831246" level="INFO">Opening browser 'Chrome' to base url 'http://google.com'.</msg>
+<msg time="2025-09-13T18:37:31.348038" level="INFO">Opening browser 'Chrome' to base url 'http://google.com'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-13T17:14:44.831000" elapsed="3.065211"/>
+<status status="PASS" start="2025-09-13T18:37:31.347805" elapsed="2.526069"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-13T18:37:33.874565" elapsed="2.189456"/>
 </kw>
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>${DELAY}</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2025-09-13T17:14:47.896918" elapsed="0.000346"/>
+<status status="PASS" start="2025-09-13T18:37:36.065036" elapsed="0.000714"/>
 </kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-09-13T17:14:47.897486" elapsed="7.124215"/>
-</kw>
-<status status="PASS" start="2025-09-13T17:14:44.830227" elapsed="10.192349"/>
+<status status="PASS" start="2025-09-13T18:37:31.346920" elapsed="4.719691"/>
 </test>
 <doc>A test for use Robot</doc>
-<status status="PASS" start="2025-09-13T17:14:44.572341" elapsed="10.452793"/>
+<status status="PASS" start="2025-09-13T18:37:31.086536" elapsed="4.982365"/>
 </suite>
 <statistics>
 <total>
