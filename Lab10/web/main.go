@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"os"
 
 	"github.com/gin-gonic/gin"
 )
@@ -16,6 +17,12 @@ type UserData struct {
 }
 
 func main() {
+	gin.SetMode(gin.ReleaseMode)
+	if len(os.Args) > 1 {
+		if os.Args[1] == "debug" {
+			gin.SetMode(gin.DebugMode)
+		}
+	}
 	router := gin.Default()
 	router.LoadHTMLFiles("./Registration.html", "./Success.html")
 

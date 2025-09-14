@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.1 on win32)" generated="2025-09-14T17:37:09.717228" rpa="false" schemaversion="5">
+<suite id="s1" name="Valid Scenario" source="C:\Users\thana\Code\SQA\LabSQA\Lab10\valid_scenario">
+<suite id="s1-s1" name="Register Without Organization" source="C:\Users\thana\Code\SQA\LabSQA\Lab10\valid_scenario\register_without_organization.robot">
+<test id="s1-s1-t1" name="Open Register web" line="15">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-14T17:37:09.998883" elapsed="0.000280"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-14T17:37:09.999665" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:8080/Lab10'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-14T17:37:09.999467" elapsed="4.733422"/>
+</kw>
+<status status="PASS" start="2025-09-14T17:37:09.997875" elapsed="4.736115"/>
+</test>
+<test id="s1-s1-t2" name="Register without Organization" line="19">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-14T17:37:14.737588" elapsed="0.000627"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-14T17:37:14.740740" level="INFO">Typing text 'Somsri' into text field 'firstname'.</msg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+<arg>true</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-14T17:37:14.739843" elapsed="0.098412"/>
+</kw>
+<var name="${key}">firstname</var>
+<var name="${value}">Somsri</var>
+<status status="PASS" start="2025-09-14T17:37:14.739580" elapsed="0.098776"/>
+</iter>
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-14T17:37:14.838871" level="INFO">Typing text 'sodsai' into text field 'lastname'.</msg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+<arg>true</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-14T17:37:14.838643" elapsed="0.065102"/>
+</kw>
+<var name="${key}">lastname</var>
+<var name="${value}">sodsai</var>
+<status status="PASS" start="2025-09-14T17:37:14.838528" elapsed="0.065364"/>
+</iter>
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-14T17:37:14.904499" level="INFO">Typing text 'somsri@kkumail.com' into text field 'email'.</msg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+<arg>true</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-14T17:37:14.904275" elapsed="0.054356"/>
+</kw>
+<var name="${key}">email</var>
+<var name="${value}">somsri@kkumail.com</var>
+<status status="PASS" start="2025-09-14T17:37:14.904142" elapsed="0.054685"/>
+</iter>
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-14T17:37:14.959671" level="INFO">Typing text '081-001-1234' into text field 'phone'.</msg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+<arg>true</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-14T17:37:14.959390" elapsed="0.049859"/>
+</kw>
+<var name="${key}">phone</var>
+<var name="${value}">081-001-1234</var>
+<status status="PASS" start="2025-09-14T17:37:14.959207" elapsed="0.050184"/>
+</iter>
+<var>${key}</var>
+<var>${value}</var>
+<value>&amp;{U1}</value>
+<status status="PASS" start="2025-09-14T17:37:14.738839" elapsed="0.270694"/>
+</for>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-14T17:37:15.009867" elapsed="0.000210"/>
+</kw>
+<kw name="Submit Form" owner="SeleniumLibrary">
+<msg time="2025-09-14T17:37:15.010364" level="INFO">Submitting form 'myform'.</msg>
+<arg>myform</arg>
+<doc>Submits a form identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-14T17:37:15.010229" elapsed="2.043724"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-09-14T17:37:18.067184" level="INFO">${title} = Success</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-09-14T17:37:17.054994" elapsed="1.012320"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-14T17:37:18.068320" elapsed="0.001010"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-09-14T17:37:19.088927" level="INFO">Page title is 'Success'.</msg>
+<arg>Success</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-09-14T17:37:18.070128" elapsed="1.019129"/>
+</kw>
+<status status="PASS" start="2025-09-14T17:37:14.736234" elapsed="4.353952"/>
+</test>
+<doc>Register without Organization</doc>
+<status status="PASS" start="2025-09-14T17:37:09.741983" elapsed="9.350952"/>
+</suite>
+<suite id="s1-s2" name="Valid Register" source="C:\Users\thana\Code\SQA\LabSQA\Lab10\valid_scenario\valid_register.robot">
+<test id="s1-s2-t1" name="Open Register web" line="15">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-14T17:37:19.104593" elapsed="0.000996"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-14T17:37:19.107716" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:8080/Lab10'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-14T17:37:19.107125" elapsed="4.661382"/>
+</kw>
+<status status="PASS" start="2025-09-14T17:37:19.103596" elapsed="4.665905"/>
+</test>
+<test id="s1-s2-t2" name="Register with Organization" line="19">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-14T17:37:23.773000" elapsed="0.000616"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-14T17:37:23.775594" level="INFO">Typing text 'Somsri' into text field 'firstname'.</msg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+<arg>true</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-14T17:37:23.775039" elapsed="0.083856"/>
+</kw>
+<var name="${key}">firstname</var>
+<var name="${value}">Somsri</var>
+<status status="PASS" start="2025-09-14T17:37:23.774758" elapsed="0.084256"/>
+</iter>
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-14T17:37:23.859939" level="INFO">Typing text 'sodsai' into text field 'lastname'.</msg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+<arg>true</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-14T17:37:23.859625" elapsed="0.055808"/>
+</kw>
+<var name="${key}">lastname</var>
+<var name="${value}">sodsai</var>
+<status status="PASS" start="2025-09-14T17:37:23.859338" elapsed="0.056228"/>
+</iter>
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-14T17:37:23.916907" level="INFO">Typing text 'CS KKU' into text field 'organization'.</msg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+<arg>true</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-14T17:37:23.916356" elapsed="0.049921"/>
+</kw>
+<var name="${key}">organization</var>
+<var name="${value}">CS KKU</var>
+<status status="PASS" start="2025-09-14T17:37:23.916046" elapsed="0.050338"/>
+</iter>
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-14T17:37:23.967915" level="INFO">Typing text 'somsri@kkumail.com' into text field 'email'.</msg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+<arg>true</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-14T17:37:23.967506" elapsed="0.054512"/>
+</kw>
+<var name="${key}">email</var>
+<var name="${value}">somsri@kkumail.com</var>
+<status status="PASS" start="2025-09-14T17:37:23.967195" elapsed="0.054945"/>
+</iter>
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-14T17:37:24.023000" level="INFO">Typing text '081-001-1234' into text field 'phone'.</msg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+<arg>true</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-14T17:37:24.022670" elapsed="0.051972"/>
+</kw>
+<var name="${key}">phone</var>
+<var name="${value}">081-001-1234</var>
+<status status="PASS" start="2025-09-14T17:37:24.022485" elapsed="0.052430"/>
+</iter>
+<var>${key}</var>
+<var>${value}</var>
+<value>&amp;{U1}</value>
+<status status="PASS" start="2025-09-14T17:37:23.774196" elapsed="0.300817"/>
+</for>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-14T17:37:24.075639" elapsed="0.000361"/>
+</kw>
+<kw name="Submit Form" owner="SeleniumLibrary">
+<msg time="2025-09-14T17:37:24.076464" level="INFO">Submitting form 'myform'.</msg>
+<arg>myform</arg>
+<doc>Submits a form identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-14T17:37:24.076271" elapsed="2.044628"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-09-14T17:37:27.135629" level="INFO">${title} = Success</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-09-14T17:37:26.121941" elapsed="1.013830"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-14T17:37:27.136686" elapsed="0.001012"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-09-14T17:37:28.151933" level="INFO">Page title is 'Success'.</msg>
+<arg>Success</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-09-14T17:37:27.138371" elapsed="1.013864"/>
+</kw>
+<status status="PASS" start="2025-09-14T17:37:23.771733" elapsed="4.381417"/>
+</test>
+<doc>Register with all field</doc>
+<status status="PASS" start="2025-09-14T17:37:19.095864" elapsed="9.059527"/>
+</suite>
+<status status="PASS" start="2025-09-14T17:37:09.718518" elapsed="18.440066"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Valid Scenario" id="s1" pass="4" fail="0" skip="0">Valid Scenario</stat>
+<stat name="Register Without Organization" id="s1-s1" pass="2" fail="0" skip="0">Valid Scenario.Register Without Organization</stat>
+<stat name="Valid Register" id="s1-s2" pass="2" fail="0" skip="0">Valid Scenario.Valid Register</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,3 +1,4 @@
 chromedriver*/
 chrome-win64/
+**/*.exe
 *.zip
